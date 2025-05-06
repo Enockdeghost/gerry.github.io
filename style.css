@@ -6,15 +6,16 @@
     --light: #f8fafc;
     --gray: #94a3b8;
 }
+/* line 77,82 ,120,568,15*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container img {
-    height: 3em;
-    width: 3em;
+.container nav img {
+    height: 2em;
+    width: 2em;
     border-radius: 30px;
     background-color: var(--primary);
     animation: fadeInDown 1s ease-out;
@@ -74,10 +75,12 @@ nav {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    padding-bottom: 2px;
 }
 
 .nav-links a:hover {
     color: var(--accent);
+    border-bottom: 1px solid var(--accent);
 }
 
 .menu-toggle {
@@ -115,7 +118,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin-bottom: 20px;
     animation: fadeInDown 1s ease-out;
 }
@@ -562,5 +565,10 @@ footer {
     
     .section-title h2 {
         font-size: 2rem;
+    }
+    .container nav img{
+        height: 2em;
+        width: 2em;
+        margin-bottom: -12px;
     }
 }
