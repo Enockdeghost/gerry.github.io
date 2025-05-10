@@ -1,3 +1,5 @@
+[![trophy](https://github-profile-trophy.vercel.app/?username=enockdeghost)](https://github.com/enockdeghost/github-profile-trophy)
+
 #  beautiful person website for Teacher Jerry from JRIT 💦
 
 # Business-Oriented Content:
