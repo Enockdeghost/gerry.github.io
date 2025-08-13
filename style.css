@@ -805,3 +805,153 @@
          padding: 25px;
      }
  }
+
+ .translator-popup {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background: linear-gradient(135deg, var(--primary) #061453);
+     background-size: 20% 20%;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+     z-index: 10000;
+     max-width: 320px;
+     display: none;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     border: 2px solid white;
+     color: white;
+ }
+
+ .popup-content {
+     position: relative;
+ }
+
+ .close-popup {
+     position: absolute;
+     top: -15px;
+     right: -15px;
+     cursor: pointer;
+     background: white;
+     color: #EA4335;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     font-size: 18px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+     transition: transform 0.3s;
+ }
+
+ .close-popup:hover {
+     transform: rotate(90deg);
+ }
+
+ .popup-buttons {
+     display: flex;
+     gap: 10px;
+     margin-top: 20px;
+     flex-wrap: wrap;
+ }
+
+ .translate-btn,
+ .decline-btn {
+     padding: 10px 20px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: all 0.3s;
+     flex: 1;
+     min-width: 120px;
+     font-size: 14px;
+ }
+
+ .translate-btn {
+     background: white;
+     color: #4285F4;
+ }
+
+ .translate-btn:hover {
+     background: #f1f1f1;
+     transform: translateY(-2px);
+ }
+
+ .decline-btn {
+     background: rgba(255, 255, 255, 0.2);
+     color: white;
+     border: 1px solid white;
+ }
+
+ .decline-btn:hover {
+     background: rgba(255, 255, 255, 0.3);
+     transform: translateY(-2px);
+ }
+
+ .popup-content h3 {
+     margin-top: 0;
+     margin-bottom: 10px;
+     font-size: 18px;
+ }
+
+ .popup-content p {
+     margin-bottom: 0;
+     font-size: 14px;
+     line-height: 1.4;
+ }
+
+ /* Google Translate Widget Styles */
+ #google-translate-element {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 9999;
+     background: white;
+     padding: 10px;
+     border-radius: 8px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     display: none;
+ }
+
+ /* Animations */
+ @keyframes discoColors {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+ @keyframes bounce {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-15px);
+     }
+ }
+
+ /* Demo page styles */
+
+
+ .content {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 40px 20px;
+ }
+
+ h1 {
+     color: #333;
+ }
